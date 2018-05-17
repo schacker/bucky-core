@@ -1,6 +1,6 @@
 {
   "name": "@lianjia-fe/bucky-core",
-  "version": "0.1.5",
+  "version": "0.1.2",
   "description": "a node web server's core",
   "scripts": {
     "example-dev": "NODE_ENV=development nodemon ./example/index.js",
@@ -13,9 +13,12 @@
     "test": "mocha 'test/**/*.spec.js' || true",
     "example-dev-multi-mix": "run-p -s example-dev-multi bucky-mix-dev"
   },
-  "repository": "https://github.com/LianjiaTech/bucky-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LianjiaTech/bucky-core.git"
+  },
   "author": "lianjia-fe@lianjia.com",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": ">= 6.0.0"
   },
@@ -37,7 +40,7 @@
     "glob": "^7.1.2"
   },
   "devDependencies": {
-    "@lianjia-fe/bucky-mix": "^1.0.5",
+    "@lianjia-fe/bucky-mix": "^1.1.7",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-polyfill": "^6.16.0",
@@ -48,5 +51,19 @@
     "nodemon": "^1.14.12",
     "npm-run-all": "^4.1.2",
     "supertest": "^3.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/LianjiaTech/bucky-core/issues"
+  },
+  "homepage": "https://github.com/LianjiaTech/bucky-core#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "node",
+    "koa2",
+    "middleware"
+  ]
 }

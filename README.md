@@ -266,9 +266,6 @@ export default {
     // 使用 ctx.request.body 获取通过 x-www-form-urlencoded 方式提交的 body
     // 使用 ctx.request.form 获取 formData 方式提交的 form 表单
 
-    // 使用 ctx.user 获取当前用户信息 (登陆的情况下)
-    // 使用 ctx.isAppWebView() 可以获取到是否在 link 或者 掌链 中
-
     // 使用 API.xxx, Model.xxx 调用 api model 中声明的 接口 和 类
 
     // 使用 ctx.render 渲染模版
@@ -494,21 +491,11 @@ await MySQL.store(async store => {
 
 > 书写自定义 koa 插件，也可以改造现有 koa 插件进来
 
-
 ## Lodash
 
 当在 configs/app.js 中设置 `_: true`, 即 全局中 `_` 即位 lodash 句柄，哪都可以用
 
-
 ## 已经封装的功能
-
-### App Web View
-
-通过 `ctx.appWebView` 或者 `ctx.request.appWebView` 方法获取
-
-+ `ctx.appWebView()` 判断目前是在 link 或者 链家app 中
-+ `ctx.appWebView('link')` 判断目前是在 link 中
-+ `ctx.appWebView('link')` 判断目前是在 链家app 中
 
 ### Form Parse / Body Parse
 
